@@ -8,7 +8,7 @@ services:
             - MONGO_INITDB_ROOT_PASSWORD=${MONGO_ROOT_PASSWORD}
         restart: always
         volumes:
-            - "./data:/data/db"
+            - ./data:/data/db
         networks:
             - botsspace
         ports:
