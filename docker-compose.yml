@@ -7,6 +7,8 @@ services:
             - MONGO_INITDB_ROOT_USERNAME=${MONGO_ROOT_USER}
             - MONGO_INITDB_ROOT_PASSWORD=${MONGO_ROOT_PASSWORD}
         restart: always
+        volumes:
+            - "./data:/data/db"
         networks:
             - botsspace
         ports:
